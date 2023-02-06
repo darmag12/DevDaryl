@@ -1,0 +1,373 @@
+/* 
+Theme Name: Dev Daryl
+Author: Daryl Magera
+Version: 1.0
+
+*/
+
+/* All styles start here!! */
+:root {
+  --code-var-color: var(--primary-color);
+  --code-var-value-color: #00d061;
+  --code-method-color: #ff97a0;
+}
+/* General styles */
+form input:focus {
+  outline: none !important;
+  border: 1px solid var(--dark-primary-color) !important;
+}
+form textarea:focus {
+  outline: none !important;
+  border: 1px solid var(--dark-primary-color);
+}
+label[for="wp-comment-cookies-consent"] {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+pre {
+  background-color: var(--secondary-color) !important;
+  color: var(--white-color) !important;
+  border-radius: 5px;
+  padding: 10px !important;
+}
+code a {
+  color: var(--secondary-color) !important;
+}
+.center__txt {
+  text-align: center !important;
+}
+.h3--darkprimary {
+  color: var(--dark-primary-color) !important;
+}
+.var--color {
+  color: var(--code-var-color);
+}
+.varvalue--color {
+  color: var(--code-var-value-color);
+}
+.method--color {
+  color: var(--code-method-color);
+}
+/* Home page styles */
+.post__date a {
+  color: var(--dark-primary-color);
+}
+.topnav__link--active {
+  color: var(--primary-color);
+}
+/* BLOG PAGE STYLES */
+.all__blogspage {
+  background-color: var(--light-text-color);
+  overflow: hidden;
+}
+.blogs__heroimg {
+  background-color: var(--secondary-color);
+  /* background-color: #1f2833cc; */
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.blogs__heroimg h2 {
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+.blogs__heroimg h2 span {
+  font-size: 3rem;
+  color: var(--primary-color);
+  text-transform: capitalize;
+}
+.blogs__heroimg span,
+.blogs__heroimg span > a {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--white-color);
+}
+.breadcrums span {
+  font-size: 0.9rem;
+}
+.breadcrums span a {
+  text-transform: capitalize;
+  color: var(--primary-color);
+}
+.post__container {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  justify-items: center;
+  padding: var(--padding-60);
+  overflow: hidden;
+}
+@media screen and (max-width: 1031px) {
+  .post__container {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: center;
+    padding: var(--padding-60);
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 500px) {
+  .post__container {
+    padding: var(--padding-30);
+  }
+}
+.post__items {
+  width: 70%;
+}
+@media screen and (max-width: 1031px) {
+  .post__items {
+    width: 100%;
+  }
+}
+.post__item {
+  border-bottom: 1px solid var(--secondary-color);
+  margin-bottom: 40px;
+}
+.post__item--noborder {
+  border: none;
+  margin-bottom: 0;
+}
+.post__image {
+  width: 100%;
+  object-fit: cover;
+}
+.post__category {
+  display: inline-block;
+  color: var(--dark-primary-color);
+  font-weight: 300;
+  font-size: 1.1rem;
+  margin-top: 30px;
+}
+.post__category a {
+  color: inherit;
+}
+.post__author {
+  font-size: 0.75rem;
+  font-style: italic;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px 10px;
+  width: fit-content;
+  padding: 10px;
+  background-color: #1f2833e1;
+  color: var(--dark-primary-color) !important;
+}
+.post__author a {
+  color: var(--dark-primary-color);
+  text-transform: capitalize;
+}
+.post__headline {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  margin: 10px 0;
+}
+.post__headline a {
+  color: var(--secondary-color);
+}
+.post__item p {
+  color: var(--secondary-color);
+}
+.post__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 650px) {
+  .post__bottom {
+    display: none;
+  }
+}
+.divider--font {
+  font-size: 1rem;
+}
+.post__commentcount {
+  color: var(--dark-primary-color);
+  font-weight: 300;
+}
+.readmore {
+  border: none;
+  background-color: transparent;
+  height: max-content;
+}
+.readmore:hover span {
+  padding-right: 10px;
+  color: var(--dark-primary-color);
+}
+.readmore:hover a {
+  color: var(--dark-primary-color);
+}
+.readmore span {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-right: 5px;
+  transition: all 0.3s ease-in-out;
+  vertical-align: sub;
+}
+.readmore a {
+  display: inline-block;
+  color: var(--secondary-color);
+  padding-left: 5px;
+  transition: color 0.3s ease-in-out;
+  font-size: 1.1rem;
+}
+.post__sidebars {
+  width: 100%;
+}
+@media screen and (max-width: 1031px) {
+  .post__sidebars {
+    display: none;
+  }
+}
+.widget__recentpostcontainer {
+  margin-bottom: 50px;
+}
+.widget h2 {
+  color: var(--dark-primary-color);
+  font-size: 1.3rem;
+}
+.widget ul {
+  list-style: none;
+  padding-left: 0;
+}
+.widget a {
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+}
+.pagination__container {
+  margin: 30px 0;
+}
+.page-numbers {
+  display: inline-block;
+  font-size: 1rem;
+  font-style: normal !important;
+  font-weight: 400;
+  border: 1px solid var(--dark-primary-color);
+  color: var(--light-text-color) !important;
+  background-color: var(--secondary-color);
+  padding: 10px;
+  margin: 5px;
+  transition: color 0.3s ease-in-out;
+}
+.page-numbers:hover {
+  color: var(--dark-primary-color) !important;
+}
+/* Comments form styles */
+.post__comments {
+  margin: 60px 0;
+}
+.post__comments .commentlist {
+  list-style: none !important;
+  padding: 0;
+  position: relative;
+}
+.post__comments .commentlist::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: -20px;
+  height: 90%;
+  width: 1px;
+  background-color: var(--secondary-color);
+}
+.post__comments .children {
+  list-style: none !important;
+  padding-left: 30px;
+}
+.post__comments .children .comment {
+  position: relative;
+}
+.post__comments .children .comment::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: -20px;
+  height: 80%;
+  width: 1px;
+  background-color: var(--secondary-color);
+}
+.post__comments .comment-body .comment-author {
+  display: flex;
+  align-items: center;
+}
+.post__comments .comment-body img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.post__comments .comment-body .fn a,
+.post__comments .comment-body cite.fn {
+  display: inline-block;
+  margin: 0 10px;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  color: var(--dark-primary-color) !important;
+}
+.post__comments .comment-body .says {
+  display: none;
+}
+.post__comments .comment-body .comment-meta {
+  width: fit-content;
+  padding: 5px 10px;
+  background-color: #1f2833e1;
+  margin: 15px 0;
+}
+.post__comments .comment-body .comment-meta a {
+  font-size: 0.7rem;
+  color: var(--dark-primary-color) !important;
+}
+.post__comments .comment-body p {
+  margin: 15px 0;
+  padding: 10px;
+}
+.post__comments .comment-body .reply {
+  margin: 20px 0;
+}
+.post__comments .comment-body .reply a {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: var(--dark-primary-color);
+}
+.post__comments #respond {
+  margin: 100px 0 30px 0;
+  color: var(--secondary-color) !important;
+}
+.post__comments #respond .logged-in-as a {
+  color: var(--secondary-color);
+  font-size: 1rem;
+}
+.post__comments #respond .required {
+  color: #8c1212;
+}
+.post__comments #respond .comment-form .comment-form-comment,
+.post__comments #respond .comment-form .comment-form-author,
+.post__comments #respond .comment-form .comment-form-email {
+  display: flex;
+  flex-direction: column;
+}
+.post__comments #respond .comment-form .comment-form-comment textarea,
+.post__comments #respond .comment-form .comment-form-author input,
+.post__comments #respond .comment-form .comment-form-email input {
+  border: none;
+  margin: 10px 0;
+  width: 90%;
+  border: 1px solid var(--secondary-color);
+  background-color: var(--light-text-color);
+}
+.post__comments #respond .comment-form .comment-form-author input,
+.post__comments #respond .comment-form .comment-form-email input {
+  height: 30px;
+}
+.post__comments #respond .comment-form .comment-form-url {
+  display: none;
+}
+.post__comments #respond .comment-form .form-submit input {
+  cursor: pointer;
+}
